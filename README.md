@@ -11,6 +11,8 @@ If this is a sign of things to come I am super excited to get into the tech fiel
 
 Simply click on the link below!
 
+https://dlrethan.github.io/Portfolio/
+
 
 ## Languages Learned 
 
