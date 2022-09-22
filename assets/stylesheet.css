@@ -105,6 +105,7 @@
   flex-direction: column;
   text-align: justify;
   padding: 20px;
+  background-image: linear-gradient(175deg, #eee 50%, #01344d 50%, #9b75d7);
 }
 #intro h2 {
   font-size: 2.5rem;
@@ -113,10 +114,10 @@
 #portfolio {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   align-items: center;
   padding: 20px;
+  background-image: linear-gradient(175deg, #eee 50%, #01344d 50%, #9b75d7);
 }
 .gallery {
   display: flex;
@@ -136,4 +137,104 @@
   font-size: 26px;
   font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
+}
+.section-contact {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: linear-gradient(175deg, #eee 50%, #01344d 50%, #9b75d7);
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0, 0.2);
+}
+.formgroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: #888;
+  font-size: 26px;
+}
+.form-element {
+  appearance: none;
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: #f3f3f3;
+}
+.form-element:focus {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: 0.4s;
+}
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+.submit-group {
+  grid-column: 1 / -1;
+  text-align: right;
+}
+.but {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 12px 16px;
+  background-color: #ff9fdb;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.but:hover {
+  background-color: #9b75d7;
+}
+@media (max-width: 800px) {
+  #pic {
+    flex-direction: column;
+    align-items: center;
+  }
+  #pic img {
+    width: 300px;
+    height: 400px;
+  }
+  #intro h2 {
+    text-align: center;
+    padding: 10px;
+  }
+  .headings {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #pic {
+    flex-direction: column;
+    align-items: center;
+  }
+  #pbeg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: wrap row;
+    font-size: 16px;
+  }
 }

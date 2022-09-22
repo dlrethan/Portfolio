@@ -10,10 +10,10 @@
   <body>
     <nav class="navbar">
       <ul>
-        <li><a href="#"> Home </a></li>
-        <li><a href="#"> Humble Beginnings </a></li>
-        <li><a href="#"> Current Work </a></li>
-        <li><a href="#"> Contact Form</a></li>
+        <li><a href="#home"> Home </a></li>
+        <li><a href="#about"> Humble Beginnings </a></li>
+        <li><a href="#portfolio"> Current Work </a></li>
+        <li><a href="#contact"> Contact Form</a></li>
       </ul>
     </nav>
     <section id="home">
@@ -22,7 +22,7 @@
           This is <br />
           Ethan De La Rosa
         </h1>
-        <button class="btn">Ask me Questions!</button>
+        <button class="btn"><a href="#contact">Ask me Questions!</a></button>
       </div>
     </section>
     <section id="about">
@@ -35,7 +35,7 @@
         <div id="intro">
           <h2>Ethan De La Rosa</h2>
           <p id="pbeg">
-            My name is Ethan De La Rosa, I began this coding journey in order to
+            My name is Ethan DeLaRosa,I began this coding journey in order to
             further my career. Since a kid I've loved computers, I've always
             wanted to look at the inner workings of computers in order to better
             understand them. Now that I've started this coding journey I can't
@@ -53,6 +53,58 @@
           <img src="./assets/Rectangle-1920x1080-Placeholder.png" alt="" />
           <img src="./assets/Rectangle-1920x1080-Placeholder.png" alt="" />
           <img src="./assets/Rectangle-1920x1080-Placeholder.png" alt="" />
+        </div>
+      </section>
+      <section class="section-contact" id="contact">
+        <div class="container">
+          <h1 class="headings">Contact Me!</h1>
+          <form>
+            <div class="formgroup">
+              <label for="firstname">First Name*</label>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                required
+                class="form-element"
+                placeholder="John"
+              />
+            </div>
+            <div class="formgroup">
+              <label for="lastname">Last Name*</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                required
+                class="form-element"
+                placeholder="Doe"
+              />
+            </div>
+            <div class="formgroup">
+              <label for="email">Email*</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                class="form-element"
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div class="formgroup">
+              <label for="message">Initial message</label>
+              <textarea
+                name="message"
+                id="message"
+                class="form-element"
+                placeholder="I want to hire you!"
+              ></textarea>
+            </div>
+            <div class="submit-group">
+              <input class="but" type="submit" value="Send Message" />
+            </div>
+          </form>
         </div>
       </section>
     </section>
