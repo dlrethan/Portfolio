@@ -97,7 +97,7 @@
   display: flex;
 }
 #pic img {
-  width: 600px;
+  width: 400px;
   height: 500px;
 }
 #intro {
@@ -109,4 +109,31 @@
 #intro h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+}
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  align-items: center;
+  padding: 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.gallery img {
+  width: 500px;
+  height: 380px;
+  margin: 20px;
+  padding: 20px;
+}
+#pbeg {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 26px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
 }
