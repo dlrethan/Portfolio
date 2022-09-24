@@ -240,10 +240,7 @@ textarea {
     flex-direction: column;
     align-items: center;
   }
-  #pic img {
-    width: 200px;
-    height: 500px;
-  }
+
   #intro h2 {
     text-align: center;
     padding: 10px;
@@ -258,6 +255,7 @@ textarea {
     font-family: "Courier New", Courier, monospace;
     font-weight: bolder;
   }
+
   .gallery img {
     width: 300px;
     height: 250px;
@@ -302,5 +300,16 @@ textarea {
     background-color: white;
     color: black;
     box-shadow: 0 0 10px white;
+  }
+  #home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(./IMG_8178.JPG) no-repeat center center/cover;
+    height: 900px;
+    width: 100vh;
+    z-index: -1;
+    opacity: 0.8;
   }
 }
