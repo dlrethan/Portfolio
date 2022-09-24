@@ -86,6 +86,12 @@
     0 0 15px blanchedalmond;
   font-weight: bolder;
 }
+.btn a {
+  color: white;
+}
+.btn:hover a {
+  color: black;
+}
 #about {
   display: flex;
   flex-direction: column;
@@ -118,6 +124,7 @@
   align-items: center;
   padding: 20px;
   background-image: linear-gradient(175deg, #eee 50%, #01344d 50%, #9b75d7);
+  color: black;
 }
 .gallery {
   display: flex;
@@ -125,6 +132,7 @@
   justify-content: space-around;
   box-sizing: border-box;
 }
+
 .gallery img {
   width: 500px;
   height: 380px;
@@ -220,21 +228,79 @@ textarea {
     font-size: 2.5rem;
   }
 }
-@media (max-width: 480px) {
-  .navbar ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+
+#bigpic {
+  width: 600px;
+  height: 380px;
+  margin: 20px;
+  padding: 20px;
+}
+@media (max-width: 450px) {
   #pic {
     flex-direction: column;
     align-items: center;
   }
+  #pic img {
+    width: 200px;
+    height: 500px;
+  }
+  #intro h2 {
+    text-align: center;
+    padding: 10px;
+  }
+  .headings {
+    font-size: 2.5rem;
+  }
   #pbeg {
     display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bolder;
+  }
+  .gallery img {
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    padding: 20px;
+  }
+  #bigpic {
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    padding: 20px;
+  }
+  .navbar {
+    display: flex;
+    flex-flow: column wrap;
     justify-content: center;
-    align-content: center;
-    flex-flow: wrap row;
-    font-size: 16px;
+    align-items: center;
+    background-color: var(--aqua);
+    position: sticky;
+    top: 0;
+  }
+  .navbar ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin: 20px 0;
+  }
+  .navbar ul li {
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-flow: column wrap;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all 0.5s ease;
+    flex-flow: column wrap;
+  }
+  .navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
   }
 }
