@@ -313,3 +313,7 @@ textarea {
     opacity: 0.8;
   }
 }
+#captions {
+  text-align: center;
+  font-size: 20px;
+}
