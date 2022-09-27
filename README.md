@@ -1,5 +1,9 @@
 # Portfolio
 
+## Pic of website!
+
+![Image of website](/assets/read-me.png)
+
 ## What I Learned
 
 During this project I got really familar with flexbox, as well as making things mobile responsive! It was a lot of fun
